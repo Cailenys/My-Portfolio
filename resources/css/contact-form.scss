@@ -1,0 +1,140 @@
+input::placeholder {
+    color: inherit;
+    
+
+  }
+  
+  
+  
+  button, select, option, a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  option {
+    color: initial;
+  }
+  
+  button, a {
+    text-decoration: none;
+    transition: all .1s;
+  }
+  
+  $primary-color: #01336C;
+  $primary-hover-color: #0e4174;
+  $white-light-color: #E1E1E1;
+  $white-hover-color: #9b9b9b;
+  
+  .button {
+    display: inline-block;
+    text-decoration: none !important;
+    text-align: center;
+    padding: 16px;
+    margin: 4px 0;
+    border: 1px solid $primary-color;
+    border-radius: 3px;
+    background-color: white;
+    color: $primary-color;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    min-width: 228px;
+    &:active {
+      background-color: $white-light-color; }
+    &:not(:active):hover {
+      color: $primary-hover-color; }
+    &:disabled {
+      cursor: default;
+      background-color: white; }
+    transition: all .16s;
+  
+    &-filled, &-filled:active {
+      background-color: $primary-color;
+      color: white !important;
+      &:not(:active):hover, &:disabled {
+        background-color: $primary-hover-color;
+        border-color: $primary-hover-color;
+      }
+    }
+  
+    &-no-border {
+      border: none;
+      padding: 17px;
+    }
+  }
+  
+  .form {
+    &-input {
+      appearance: none;
+      outline: none;
+      padding: 16px;
+      margin: 4px 0;
+      width: 100%;
+      background: #00000000;
+      border: 1px solid #CCCCCC;
+      border-radius: 3px;
+      color: inherit;
+      font-size: 16px;
+      z-index: 1;
+      position: relative;
+      width: 90%;
+
+    .form-dark & {
+        border: 1px solid white; }
+      }
+
+   
+  
+    
+      &__label {
+        margin-left: 16px;
+        margin-left: 10px;
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: -3px;
+        
+      }
+  
+      &:hover a {
+        text-decoration: underline;
+      }
+    }
+  
+  
+  .action {
+    &-background {
+      background: {
+        image: url('https://trello-attachments.s3.amazonaws.com/5e38d83b540e9c08f45c3641/5e6bfcaba574fa71f6ef2088/b0ed959081c38afd8603d1398b915f73/meet-for-coffee1.jpg');
+        size: cover;
+        position: center;
+      }
+    }
+  
+    &-shadow {
+      background: linear-gradient(117deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.7) 100%);
+    }
+  
+    &-container {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      padding-top: 110px;
+      padding-bottom: 110px;
+    
+    }
+  
+    &-form {
+      max-width: 530px;
+      color: white;
+  
+      &__header {
+        font-size: 50px;
+        line-height: 1em;
+        font-weight: 600;
+        margin-bottom: 26px;
+        @media (max-width: 767px) {
+          font-size: 35px; }
+      }
+    }
+  }
+  
