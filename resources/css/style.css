@@ -24,10 +24,9 @@ html{
   margin:0 auto;
 }
 
-/*.nav-row {
+.nav-row {
   max-width: 1140px;
-  margin:-40px;
-}*/
+}
 
 h1 {
   font-size: 130%;
@@ -74,8 +73,6 @@ img {
 
 /*------ Button ------*/
 
-/*------ Buttons ------*/
-
 .button:link,
 .button:visited {
 display: inline-block;
@@ -102,26 +99,12 @@ border: 1px solid whitesmoke;
 
 
 
-/*------ Links ------*/
-a:link,
-a:visited{
-  color: #555;
-  text-decoration: none;
-  padding-bottom: 1px;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.2s, color 0.2s;
-}
 
-a:hover,
-a:active {
-  color:#0ba14b;
-  border-bottom: 1px solid transparent;
-}
 
 /*------ Links ------*/
 a:link,
 a:visited{
-  color: #555;
+  color: #F3F4F9;
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid transparent;
@@ -155,27 +138,26 @@ header {
 }
 
 
-
 /*------ Main Navigation ------*/
 
 .main-nav {
   list-style: none;
 }
 
-.portfolio li{
+.main-nav li{
   display:block;
 }
 
-.portfolio li a:link,
-.portfolio li a:visited {
- color:#F3F4F9;
+.main-nav li a:link,
+.main-nav li a:visited {
+ color:whitesmoke;
  text-decoration: none;
  display:block;
  border:0;
 }
 
-.portfolio li a:hover,
-.portfolio li a:active {
+.main-nav li a:hover,
+.main-nav li a:active {
 border-bottom: 2px solid #CF9999; // underline text
 }
 
@@ -192,7 +174,7 @@ border-bottom: 2px solid #CF9999; // underline text
  
  .fixed-nav .main-nav li a:link,
  .fixed-nav .main-nav li a:visited {
-  color:#555;
+  color:#F3F4F9;
  }
 
 /*------ Mobile Navigation ------*/
@@ -210,10 +192,6 @@ border-bottom: 2px solid #CF9999; // underline text
 } 
     
 
-.fixed-nav .logo {
- display: block;
-}
- 
 
 /*******************************
 *    Section 3 - My work
@@ -311,3 +289,14 @@ margin: 0;
   margin-right: 1rem;
   }
 
+ footer a:link,
+ footer a:visited{
+  color: #555;
+
+}
+
+footer a:hover,
+footer a:active {
+  color:#CF9999;
+  border-bottom: 1px solid transparent;
+}
