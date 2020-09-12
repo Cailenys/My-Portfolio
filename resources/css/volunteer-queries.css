@@ -108,7 +108,7 @@
   *********************/
 
   footer{
-    padding-left: 5rem;
+    padding-left: 1rem;
   }
     
   .copy-right p {
@@ -184,6 +184,28 @@ h2{ font-size: 130%;}
 .main-nav{
   margin-top: 59px;
 }
+
+
+
+blockquote{
+  padding: 1rem 2rem 0 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+blockquote:before{
+  content: "\201C";
+  font-family:"sans-serif";
+  font-size: 250%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 10.5rem;
+}
+
+cite{
+  text-align: center;
+}
 /********************
 *     Header
 *********************/
@@ -216,13 +238,15 @@ header {
   /*******************************
   *    Section 3 - Key values
   ********************************/
-
+ 
   .box p{
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin: 2rem 2rem 2rem 2rem;
   }
   
-  
+  .volunteer1-img{
+    padding-left: 4rem;
+    padding-top: 3rem;
+  }
   /*****************************
   *     Section 3 - Products
   ******************************/

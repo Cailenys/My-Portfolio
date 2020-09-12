@@ -190,7 +190,32 @@
     color:whitesmoke;
     
   } 
-      
+  
+  /*******************************
+  *    Blockquote
+  ********************************/ 
+  blockquote{
+    padding: 1rem 3rem 0 3rem;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+  }
+  
+  blockquote:before{
+    content: "\201C";
+    font-family:"sans-serif";
+    font-size: 250%;
+    display: block;
+    position: absolute;
+    top: -5px;
+  }
+  
+  cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+  }   
   
   
   /*******************************
@@ -209,45 +234,23 @@
     margin-left: 3rem;
   }
   
-  .my-work{
-    margin-bottom: 3rem;
+   
+     
+  .volunteer1 {
+  background-color:#F3F4F9;
   }
-  
-  
-  
-  .my-work h2{
-    letter-spacing: 1.5px;
-    text-align: center;
-    margin-bottom: 18px;
+
+  .volunteer .box p{
+    text-align: justify;
   }
-  
-  .portfolio-list {
-    background-image: url(img/team-work.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 200px;
-    width: 180px;
-    margin-left: 80px;
-  
-  }
-  
-  .portfolio li{
-    list-style: none;
-    text-align: center;
-  }
-  
-  .portfolio-list ul{
-    padding-top: 58px;
-    line-height: 150%;
-    font-size: 85%;
-  }
-  
-  
-  .volunteer{
-    margin-left: 80px;
-  }
-  
-  
+    .volunteer1 img{
+      height: 200px;
+      width: 300px;
+    }
+
+    .volunteer1-img2{
+      margin-left: 80px;
+    }
   /********************
   *     Footer
   *********************/
@@ -264,9 +267,7 @@
     font-size: 0.8rem;
   }
   
-  .footer-text {
-    text-align: center;
-  }
+  
   
   .contact-info, .footer-nav, .social-icons {
     list-style: none;
@@ -282,10 +283,7 @@
     font-size:1.3rem;
   }
   
-  .social-icons li{
-   
-    margin-right: 1rem;
-    }
+  
   
    footer a:link,
    footer a:visited{

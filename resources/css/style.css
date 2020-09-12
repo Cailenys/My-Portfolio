@@ -71,7 +71,7 @@ img {
   text-align: center;
 }
 
-/*------ Button ------*/
+/*------ Buttons ------*/
 
 .button:link,
 .button:visited {
@@ -81,22 +81,20 @@ font-weight: 300;
 text-decoration: none;
 border-radius: 200px;
 color: whitesmoke;
-border: 1px solid #F3F4F9;
+border: 1px solid #CF9999;
 transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .button:hover,
 .button:active{
-background-color: #CF9999;
-border: 1px solid whitesmoke;
+background-color: #dab2b2;
+border: 1px solid #F3F4F9;
 }
 
 .button-header {
   background-color: #CF9999;
-  margin-right:20px;
   font-weight: bolder;
 }
-
 
 
 
@@ -266,9 +264,7 @@ footer{
   font-size: 0.8rem;
 }
 
-.footer-text {
-  text-align: center;
-}
+
 
 .contact-info, .footer-nav, .social-icons {
   list-style: none;
@@ -280,7 +276,6 @@ margin: 0;
 }
 
 .social-icons{
-
   font-size:1.3rem;
 }
 
@@ -300,3 +295,4 @@ footer a:active {
   color:#CF9999;
   border-bottom: 1px solid transparent;
 }
+

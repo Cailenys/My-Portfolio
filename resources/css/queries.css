@@ -246,8 +246,8 @@ header {
   }
   
   
-  .footer-text {
-    text-align: left;
+  .footer-row  {
+    padding-left: 1rem;
   }
   
     
@@ -255,9 +255,8 @@ header {
   .social-icons li:last-child{
   margin: 0;
   }
-  .footer-row{
-    margin-left: 20rem;
-  }
+
+  
   .social-icons{
     font-size:1.3rem;
   }
