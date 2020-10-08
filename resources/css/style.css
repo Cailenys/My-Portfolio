@@ -227,7 +227,7 @@ border-bottom: 2px solid #CF9999; // underline text
   background-position: center;
   height: 200px;
   width: 180px;
-  margin-left: 80px;
+  margin-left: 50px;
 
 }
 
@@ -237,9 +237,9 @@ border-bottom: 2px solid #CF9999; // underline text
 }
 
 .portfolio-list ul{
-  padding-top: 58px;
+  padding-top: 45px;
   line-height: 150%;
-  font-size: 85%;
+  font-size: 70%;
 }
 
 
