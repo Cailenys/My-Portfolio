@@ -143,7 +143,7 @@ header {
 }
 
 .main-nav li{
-  display:block;
+  display:inline-block;
 }
 
 .main-nav li a:link,
@@ -210,6 +210,7 @@ border-bottom: 2px solid #CF9999; // underline text
 .my-work{
   margin-bottom: 3rem;
 }
+
 .my-work h1{
   padding-top: 2%;
 }
@@ -227,7 +228,7 @@ border-bottom: 2px solid #CF9999; // underline text
   background-position: center;
   height: 200px;
   width: 180px;
-  margin-left: 50px;
+  margin-left: 80px;
 
 }
 

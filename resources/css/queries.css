@@ -331,15 +331,22 @@ header {
 /*------ Mobile Navigation ------*/
 
 .mobile-nav-icon {
-  margin-top:56px;
-  cursor: pointer;
+  
   display: inline-block;
   }
+.main-nav{
+  float:left;
+}
 
-.mobile-nav-icon i {
-  font-size: 200%;
-  color:whitesmoke;
-} 
+.main-nav li{
+ display: block;
+}
+
+.main-nav li a:link
+.main-nav li a:visited{
+  display: block;
+  border:0;
+ }
 
 
 /*******************************
@@ -397,7 +404,7 @@ footer{
 
 .footer-nav li:last-child, 
 .social-icons li:last-child{
-margin: 0;
+  margin: 0;
 }
 
 .social-icons{
