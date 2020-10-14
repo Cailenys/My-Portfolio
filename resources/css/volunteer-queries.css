@@ -1,133 +1,3 @@
-/************************************************
-*   Big table 1200px
-*************************************************/
-
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-   /*---------------------------
-     Basic Setup
-----------------------------*/
-
-  
-  html{
-    font-weight: 300;
-    font-size: 20px;
-  }
-  
-  /*---------------------------
-       Reusable components
-  ----------------------------*/
-
-  h1 {
-    font-size: 150%;
-    font-weight: 300;   
-  }
-  
-
-  /*------ Headings ------*/
-  
-  .header-text-box h1 {
-    font-size: 150%;
-    margin-top: -380px;
-    
-  }
-  
-  h2{ font-size: 130%;}
-  
-  img { 
-    max-width: 100%;
-    height: auto;
-   }
-  
-  .section1{
-    background-color: #f2f2f2;
-    
-  }
-  
-  /*------ Icons ------*/
-  .icon-key {
-    font-size: 150%;
-    margin: 5% 45% 20px ;
-    text-align: center;
-  }
-  
-  
-  
-  
-  /********************
-  *     Header
-  *********************/
-  
-  header {
-    background-size: contain;
-    height: 50vh;
-   background-repeat: no-repeat;
-  }
-  
- 
-
-  .main-nav{
-    float: right;
-    list-style: none;
-    margin-top: -25px;
-    margin-left:500px;
-  }
-  
-  .main-nav li{
-    display:inline-block;
-    margin-left: -30px;
-    margin-right: 50px;
-  }
-
-
-  .portfolio li a:link,
-  .portfolio li a:visited {
-  font-size: 90%;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.2s;
-  padding-right: 9px; // space between the navigation bar text and underline
-  }
-
- 
-
-/*------ Mobile Navigation ------*/
-
-  .mobile-nav-icon { display:none; }
-    
-
-  
-  
-  
-  /********************
-  *     Footer
-  *********************/
-
-  footer{
-    padding-left: 1rem;
-  }
-    
-  .copy-right p {
-    text-align: center;
-    padding-right: 10rem;
-  }
-   
-  .social-icons{
-      font-size:1.3rem;
-  }
-  
-  .social-icons li{
-    display:inline-block ;
-    margin-right: 1rem;
-  
-    }
- 
-}
-
 
 /************************************************
 *   Desktop 1600px
@@ -296,147 +166,188 @@ header {
 }
 
 
+
+/************************************************
+*   Big table 1200px
+*************************************************/
+
+
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+  /*---------------------------
+     Basic Setup
+----------------------------*/
+  body { font-size: 18px; }
+  header {
+    height: 30vh;
+    background-size: cover;
+    background-position-x: 1200px;
+  }
+
+  .header-text-box{
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row { padding: 0 2%; }
+
+ 
+   
+}
+
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+
+@media only screen and (max-width: 1023px) {
+  body { font-size: 18px; }
+  section { padding: 60px 0; }
+  
+    
+  
+  header {
+    height: 50vh;
+    background-size: cover;
+    background-position-x: 358px;
+  }
+
+  .header-text-box{
+    top: 25%;
+    left: 20%;
+  }
+
+  .icon-my-work { 
+      width: 17px;
+  }
+  
+  h2 { font-size: 90%; }
+  
+  .my-work-box { margin-top: 10px; }
+  .my-work-box:last-child { margin-top: 10px; }
+  
+  .work-box {
+      width: 100%;
+      margin-left: 0%;
+  }
+  
+  .contact-form { width: 80%; }
+
+}
+
+
+
+
 /************************************************
 *     Mobile 
 *************************************************/
 
-@media screen 
-  and (min-device-width: 340px) 
-  and (max-device-width: 640px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  body { font-size: 16px; }
+  section { padding: 30px 0; }
 
-/*------ Headings ------*/
+  header {
+    height: 50vh;
+    background-size: cover;
+    background-position-x: 358px;
+  }
+  .header-text-box { padding-top: 50px;}
+  
+  .row { padding:  4%; }
+  .col { 
+      width: 100%;
+      margin: 0 0 4% 0;
+  }
+  
+  .main-nav {
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+  .main-nav li {
+    display: block;
+}
+  
+  .fixed-nav  .main-nav { margin-top: 10px; }
 
-.header-text-box h1 {
-  font-size: 109%;
-  margin-top: -75px;
-  color: whitesmoke;
+  .fixed-nav .main-nav li a:link,
+  .fixed-nav  .main-nav li a:visited { padding: 10px 0; }
+  .fixed-nav  .mobile-nav-icon { margin-top: 10px; }
+  .fixed-nav  .mobile-nav-icon i { color: #555; }
+  
+  
+  
+  h1 { font-size: 180%; }
+  h2 { font-size: 150%; }
+  
+ 
+
+  .my-work-box:first-child { text-align: center; }
+  
+  .work-box div {
+      
+      margin-right: 15px;
+      padding: 4px;
+      font-size: 120%;
+  }
+  
+  .work-box { margin-bottom: 20px; }
+  .work-box:last-of-type { margin-bottom: 20px; }
+  
 }
 
-h2{ font-size: 130%;}
 
-img { 
-  max-width: 100%;
-  height: auto;
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+  body { font-size: 12px; }
+  section { padding: 25px 0; }
+  .contact-form {width: 100%; }
+
+  
+
+  .header-text-box { 
+    padding-top:50px;
+    padding-left:30px
+  }
+
+  .main-nav { display:none;}
+
+  .mobile-nav-icon {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 142px;
+  }
+  .main-nav {
+      float: left;
+      margin-top: 30px;
+      margin-left: 10px;
+  }
+  
+  .main-nav li {
+    display: block;
+  }
+   
+  .main-nav li a:link,
+  .main-nav li a:visited {
+      display: block;
+      border: 0;
+      padding: 5px 0;
+      font-size: 100%;
+  }
+  
+/*------ Fixed Navigation ------*/
+
+.fixed-nav .main-nav {
+ margin-top: 10px;
+}
+
+ .fixed-nav .main-nav li a:link,
+ .fixed-nav .main-nav li a:visited {
+  color:#F3F4F9;
  }
 
-.section1{
-  background-color: #f2f2f2;
-  
 }
 
-/*------ Icons ------*/
-.icon-key{
-  font-size: 150%;
-  margin: 5% 45% 20px ;
-  text-align: center;
-}
-
-
-
-
-/********************
-*     Header
-*********************/
-
-header {
-  margin-top: 0;
-  background-image: linear-gradient(hsla(0, 0%, 0%, 0.3), rgba(0, 0, 0, 0.3)),url(img/header-mobile.png);
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  background-position-x: 58vh;
-  
-}
-
-.header-text-box{
-  top: 27%;
-  left: 31%;
-}
-
-/*------ Mobile Navigation ------*/
-
-.mobile-nav-icon {
-  margin-top:56px;
-  cursor: pointer;
-  display: inline-block;
-  }
-
-.mobile-nav-icon i {
-  font-size: 200%;
-  color:whitesmoke;
-} 
-
-
-/*******************************
-*    Section 1 My work
-********************************/
-
-.box {
-  padding: 1%;
-
-}
-.box p{
-  font-size: 90%;
-  line-height: 145%;
-  text-align: center;
- 
-}
-
-
-.my-work h1{
-  padding-top: 7%;
-}
-
-
-.my-work h2{
-  letter-spacing: 1.5px;
-  text-align: center;
-  margin-bottom: 18px;
-}
-
-
-
-/********************
-*     Footer
-*********************/
-
-footer{
-  background-color: #171717;
-  padding: 2rem;
-  line-height: 150%;
-  padding-left: 3rem;
-  padding-right: -15rem;
-}
-.copy-right p {
-  text-align: center;
-  font-size: 0.8rem;
-}
-
-.footer-text {
-  text-align: center;
-}
-
-.contact-info, .footer-nav, .social-icons {
-  list-style: none;
-}
-
-.footer-nav li:last-child, 
-.social-icons li:last-child{
-margin: 0;
-}
-
-.social-icons{
-
-  font-size:1.3rem;
-}
-
-.social-icons li{
-  display:inline-block ;
-  margin-right: 1rem;
-  }
-
-
-
-
-  }

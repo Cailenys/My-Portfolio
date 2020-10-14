@@ -64,7 +64,7 @@ img {
 }
 
 /*------ Icons ------*/
-.icon-key{
+.icon-my-work{
   font-size: 150%;
   margin: 5% 45% 20px ;
   color: #CF9999;
@@ -127,11 +127,13 @@ header {
 }
 
 .header-text-box{
-  position:absolute;
+  position: absolute;
   width: 1140px;
-  top: 40%;
-  left:50%;
-  transform:translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -139,19 +141,25 @@ header {
 /*------ Main Navigation ------*/
 
 .main-nav {
+  float: right;
   list-style: none;
+  margin-top: 55px;
 }
 
 .main-nav li{
-  display:inline-block;
+  display: inline-block;
+  margin-left: 40px;
 }
 
 .main-nav li a:link,
 .main-nav li a:visited {
- color:whitesmoke;
- text-decoration: none;
- display:block;
- border:0;
+  padding: 8px 0;
+  color:whitesmoke;
+  text-decoration: none;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
 }
 
 .main-nav li a:hover,
@@ -164,11 +172,14 @@ border-bottom: 2px solid #CF9999; // underline text
 
 .fixed-nav {
   position:fixed;
+  top:0;
+  left:0;
   width:100%;
   background-color: #f2f2f2;
   box-shadow: 0 2px 2px #d8d7d7ef;
   z-index:9999;
  }
+ .fixed-nav .main-nav { margin-top: 18px;}
  
  .fixed-nav .main-nav li a:link,
  .fixed-nav .main-nav li a:visited {
@@ -178,15 +189,14 @@ border-bottom: 2px solid #CF9999; // underline text
 /*------ Mobile Navigation ------*/
 
 .mobile-nav-icon {
-  margin-top:56px;
   cursor: pointer;
-  display: inline-block;
+  display: none;
   }
 
 .mobile-nav-icon i {
   font-size: 200%;
-  color:whitesmoke;
-  
+  color:whitesmoke; 
+  margin-left: 142px;
 } 
     
 
@@ -195,11 +205,11 @@ border-bottom: 2px solid #CF9999; // underline text
 *    Section 3 - My work
 ********************************/
 
-.box {
+.my-work-box  {
   padding: 1%;
 
 }
-.box p{
+.my-work-box  p{
   font-size: 90%;
   line-height: 145%;
   text-align: center;
