@@ -237,7 +237,6 @@ header {
 
 
 
-
 /************************************************
 *     Mobile 
 *************************************************/
@@ -349,5 +348,21 @@ header {
   color:#F3F4F9;
  }
 
+ /********************
+*     Footer
+*********************/
+
+footer{
+   padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
 }
 
+.social-icons li{
+  display: inline-block;
+  margin-right: 0px;
+  margin-right: 10px;
+  }
+
+
+}

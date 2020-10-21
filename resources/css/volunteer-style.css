@@ -116,80 +116,92 @@
     color:#CF9999;
     border-bottom: 1px solid transparent;
   }
+
+/********************
+*     Header
+*********************/
+
+header {
+  margin-top: 0;
+  background-image: linear-gradient(hsla(0, 0%, 0%, 0.3), rgba(0, 0, 0, 0.3)),url(img/header-pic.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header-text-box{
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/*------ Main Navigation ------*/
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color:whitesmoke;
+  text-decoration: none;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+border-bottom: 2px solid #CF9999; // underline text
+}
   
-  /********************
-  *     Header
-  *********************/
-  
-  header {
-    margin-top: 0;
-    background-image: linear-gradient(hsla(0, 0%, 0%, 0.3), rgba(0, 0, 0, 0.3)),url(img/header-pic.png);
-    background-size: cover;
-    background-position: center;
+
+/*------ Fixed Navigation ------*/
+
+.fixed-nav {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 2px #d8d7d7ef;
+  z-index:9999;
+ }
+ .fixed-nav .main-nav { margin-top: 18px;}
+ 
+ .fixed-nav .main-nav li a:link,
+ .fixed-nav .main-nav li a:visited {
+  color:#F3F4F9;
+ }
+
+/*------ Mobile Navigation ------*/
+
+.mobile-nav-icon {
+  cursor: pointer;
+  display: none;
   }
-  
-  .header-text-box{
-    position:absolute;
-    width: 1140px;
-    top: 40%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  
-  /*------ Main Navigation ------*/
-  
-  .main-nav {
-    list-style: none;
-  }
-  
-  .main-nav li{
-    display:block;
-  }
-  
-  .main-nav li a:link,
-  .main-nav li a:visited {
-   color:whitesmoke;
-   text-decoration: none;
-   display:block;
-   border:0;
-  }
-  
-  .main-nav li a:hover,
-  .main-nav li a:active {
-  border-bottom: 2px solid #CF9999; // underline text
-  }
-  
-  
-  /*------ Fixed Navigation ------*/
-  
-  .fixed-nav {
-    position:fixed;
-    width:100%;
-    background-color: #f2f2f2;
-    box-shadow: 0 2px 2px #d8d7d7ef;
-    z-index:9999;
-   }
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color:whitesmoke; 
+  margin-left: 142px;
+} 
    
-   .fixed-nav .main-nav li a:link,
-   .fixed-nav .main-nav li a:visited {
-    color:#F3F4F9;
-   }
-  
-  /*------ Mobile Navigation ------*/
-  
-  .mobile-nav-icon {
-    margin-top:56px;
-    cursor: pointer;
-    display: inline-block;
-    }
-  
-  .mobile-nav-icon i {
-    font-size: 200%;
-    color:whitesmoke;
     
-  } 
   
   /*******************************
   *    Blockquote
