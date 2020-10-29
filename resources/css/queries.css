@@ -268,15 +268,14 @@ header {
     display: block;
 }
   
-  .fixed-nav  .main-nav { margin-top: 10px; }
+  .fixed-nav  .main-nav { margin-top: 0px; }
 
   .fixed-nav .main-nav li a:link,
-  .fixed-nav  .main-nav li a:visited { padding: 10px 0; }
-  .fixed-nav  .mobile-nav-icon { margin-top: 10px; }
-  .fixed-nav  .mobile-nav-icon i { color: #555; }
+  .fixed-nav .main-nav li a:visited { padding: 10px 0; }
+  .fixed-nav .mobile-nav-icon { margin-top: 0px; }
+  .fixed-nav .mobile-nav-icon i { color: #555; }
   
-  
-  
+    
   h1 { font-size: 180%; }
   h2 { font-size: 150%; }
   
@@ -285,7 +284,6 @@ header {
   .my-work-box:first-child { text-align: center; }
   
   .work-box div {
-      
       margin-right: 15px;
       padding: 4px;
       font-size: 120%;
@@ -320,9 +318,9 @@ header {
     margin-left: 142px;
   }
   .main-nav {
-      float: left;
-      margin-top: 30px;
-      margin-left: 10px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
   }
   
   .main-nav li {
@@ -331,10 +329,10 @@ header {
    
   .main-nav li a:link,
   .main-nav li a:visited {
-      display: block;
-      border: 0;
-      padding: 5px 0;
-      font-size: 100%;
+    display: block;
+    border: 0;
+    padding: 5px 0;
+    font-size: 100%;
   }
   
 /*------ Fixed Navigation ------*/
@@ -353,7 +351,7 @@ header {
 *********************/
 
 footer{
-   padding-left: 3rem;
+  padding-left: 3rem;
   padding-right: 3rem;
   text-align: center;
 }
