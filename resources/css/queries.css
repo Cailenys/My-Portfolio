@@ -301,18 +301,14 @@ header {
 
   body { font-size: 12px; }
   section { padding: 25px 0; }
-  .contact-form {width: 100%; }
-
-  .volunteer-icon {
-    padding-top: 20px;
-  }
+  
+ 
 
   .header-text-box-2{
-    display: inline;
+    display: block;
     padding-top: 10px;
   }
- 
- 
+  
   .header-text-box { 
     padding-top:50px;
     padding-left:30px

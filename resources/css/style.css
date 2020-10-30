@@ -128,7 +128,7 @@ header {
   background-position: center;
 }
 
-.header-text-box, .header-text-box-2 {
+.header-text-box {
   position: absolute;
   width: 1140px;
   top: 50%;
@@ -139,17 +139,12 @@ header {
   text-align: center;
 }
 
- .header-text-box-2 {
-  position: absolute;
-  width: 1140px;
-  margin-top: 605px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.header-text-box-2{
+  display: none;
+  padding-top: 10px;
   text-align: center;
+  margin-left: 40px;
 }
-
 
 /*------ Main Navigation ------*/
 
