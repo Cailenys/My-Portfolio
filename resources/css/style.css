@@ -96,7 +96,9 @@ border: 1px solid #F3F4F9;
   font-weight: bolder;
 }
 
-
+.header-text-box-2{
+  display: none;
+}
 
 
 /*------ Links ------*/
@@ -126,10 +128,21 @@ header {
   background-position: center;
 }
 
-.header-text-box{
+.header-text-box, .header-text-box-2 {
   position: absolute;
   width: 1140px;
   top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+ .header-text-box-2 {
+  position: absolute;
+  width: 1140px;
+  margin-top: 605px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
