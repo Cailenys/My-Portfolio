@@ -244,8 +244,8 @@ border-bottom: 2px solid #CF9999; // underline text
   background-image: url(img/team-work.jpg);
   background-size: cover;
   background-position: center;
-  height: 200px;
-  width: 180px;
+  height: 205px;
+  width: 200px;
   margin-left: 80px;
 
 }
@@ -263,7 +263,11 @@ border-bottom: 2px solid #CF9999; // underline text
 
 
 .volunteer{
-  margin-left: 80px;
+  margin-left: 70px;
+  background-size: cover;
+  background-position: center;
+  height: 205px;
+  width: 200px;
 }
 
 
