@@ -114,10 +114,14 @@ header {
     margin: 2rem 2rem 2rem 2rem;
   }
   
-  .volunteer1-img{
-    padding-left: 4rem;
-    padding-top: 3rem;
+  .volunteer{
+    margin-left: 70px;
+    background-size: cover;
+    background-position: center;
+    height: 205px;
+    width: 200px;
   }
+  
   /*****************************
   *     Section 3 - Products
   ******************************/
